@@ -16,7 +16,7 @@ import google.generativeai as palm
 
 # load model
 # PaLM API Key here
-palm.configure(api_key='AIzaSyA8bVYUoQX-CYOWO1VLNy8VeoxnVf9wlsg')
+palm.configure(api_key='')
 # Use the palm.list_models function to find available models
 # PaLM 2 available in 4 sizes: Gecko, Otter, Bison and Unicorn (largest)
 models = [m for m in palm.list_models() if 'generateText' in m.supported_generation_methods]
